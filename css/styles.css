@@ -43,6 +43,13 @@ header{
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tarjeta-menu:hover{
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 18px rgba(0,0,0,0.2);
 }
 
 .tarjeta-menu a{
@@ -52,10 +59,13 @@ header{
     text-align: center;
     padding: 10px;
     border-radius: 5px;
+
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .tarjeta-menu a:hover{
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 .contenedor-flex{
     display: flex;
