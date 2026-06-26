@@ -60,8 +60,11 @@ header{
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
-
+.tarjeta:hover{
+    transform: translateY(-5px);
+}
 .acciones{
     text-align: center;
     margin-top: 20px;
@@ -70,6 +73,14 @@ header{
 button{
     padding: 10px 20px;
     cursor: pointer;
+}
+button:hover{
+    background-color: #0056b3;
+    color: white;
+}
+
+button{
+    transition: 0.3s;
 }
 .contenedor-formulario{
     max-width: 900px;
@@ -104,4 +115,10 @@ th, td{
 th{
     background-color: #007bff;
     color: white;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #666;
 }
