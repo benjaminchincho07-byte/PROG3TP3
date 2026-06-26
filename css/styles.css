@@ -128,8 +128,22 @@ th{
     color: white;
 }
 footer{
-    text-align: center;
     margin-top: 50px;
-    padding: 20px;
-    color: #666;
+    background-color: #0056b3;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.footer-contenido{
+    text-align: center;
+}
+
+.footer-contenido h3{
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-contenido p{
+    margin: 5px 0;
 }
