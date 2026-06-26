@@ -44,9 +44,9 @@ function App() {
         e("form", { className: "formulario", onSubmit: agregarPersona },
             e("input", { type: "text", name: "nombre", placeholder: "Nombre", value: formulario.nombre, onChange: manejarCambio, required: true }),
             e("input", { type: "text", name: "apellido", placeholder: "Apellido", value: formulario.apellido, onChange: manejarCambio, required: true }),
-            e("input", { type: "number", name: "edad", placeholder: "Edad", value: formulario.edad, onChange: manejarCambio, required: true }),
-            e("input", { type: "number", step: "0.01", name: "altura", placeholder: "Altura en metros", value: formulario.altura, onChange: manejarCambio, required: true }),
-            e("input", { type: "number", step: "0.1", name: "peso", placeholder: "Peso en kg", value: formulario.peso, onChange: manejarCambio, required: true }),
+            e("input", { type: "number", name: "edad", min: "0", placeholder: "Edad", value: formulario.edad, onChange: manejarCambio, required: true }),
+            e("input", { type: "number", step: "0.01", min: "0.01", name: "altura", placeholder: "Altura en metros", value: formulario.altura, onChange: manejarCambio, required: true }),
+            e("input", { type: "number", step: "0.1", min: "0.1", name: "peso", placeholder: "Peso en kg", value: formulario.peso, onChange: manejarCambio, required: true }),
             e("button", { type: "submit" }, "Agregar persona")
         ),
 

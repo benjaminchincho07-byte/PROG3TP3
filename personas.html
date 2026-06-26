@@ -19,9 +19,9 @@
         <form id="formPersona" class="formulario">
             <input type="text" id="nombre" placeholder="Nombre" required>
             <input type="text" id="apellido" placeholder="Apellido" required>
-            <input type="number" id="edad" placeholder="Edad" required>
-            <input type="number" id="altura" placeholder="Altura en metros" step="0.01" required>
-            <input type="number" id="peso" placeholder="Peso en kg" step="0.1" required>
+            <input type="number" id="edad" placeholder="Edad" min="0" required>
+            <input type="number" id="altura" placeholder="Altura en metros" step="0.01" min="0.01" required>
+            <input type="number" id="peso" placeholder="Peso en kg" step="0.1" min="0.1" required>
 
             <button type="submit">Agregar persona</button>
         </form>
